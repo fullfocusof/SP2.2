@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\SP2.2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{87AC6E8D-EA05-4A09-AEAA-E7AC7225B534}|SP2.2.csproj|d:\\projects\\sp2.2\\philosopherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87AC6E8D-EA05-4A09-AEAA-E7AC7225B534}|SP2.2.csproj|solutionrelative:philosopherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87AC6E8D-EA05-4A09-AEAA-E7AC7225B534}|SP2.2.csproj|d:\\projects\\sp2.2\\philosopherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{87AC6E8D-EA05-4A09-AEAA-E7AC7225B534}|SP2.2.csproj|solutionrelative:philosopherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PhilosopherForm.cs",
+              "DocumentMoniker": "D:\\Projects\\SP2.2\\PhilosopherForm.cs",
+              "RelativeDocumentMoniker": "PhilosopherForm.cs",
+              "ToolTip": "D:\\Projects\\SP2.2\\PhilosopherForm.cs",
+              "RelativeToolTip": "PhilosopherForm.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAcwLYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T17:06:42.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PhilosopherForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\Projects\\SP2.2\\PhilosopherForm.cs",
+              "RelativeDocumentMoniker": "PhilosopherForm.cs",
+              "ToolTip": "D:\\Projects\\SP2.2\\PhilosopherForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "PhilosopherForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T16:54:06.215Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
