@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
@@ -50,7 +51,7 @@ namespace SP2._2
                     forks[second].TakeFork();
 
                     CurrentState = State.Eat;
-                    Thread.Sleep(rand.Next(3000, 8000));
+                    Thread.Sleep(delays[Id]);
 
                     CountMeals++;
 
@@ -58,7 +59,7 @@ namespace SP2._2
                     forks[second].PutFork();
 
                     CurrentState = State.Think;
-                    Thread.Sleep(rand.Next(3000, 8000));
+                    Thread.Sleep(delays[Id]);
                 }
             }
         }
@@ -80,6 +81,7 @@ namespace SP2._2
         static List<Philosopher> _phs = new List<Philosopher>();
 
         private Thread[] threads = new Thread[5];
+        private static int[] delays = new int[5];
 
         private SolidBrush hungerColor = new SolidBrush(Color.FromArgb(255, 0, 0, 255));
         private SolidBrush eatColor = new SolidBrush(Color.FromArgb(255, 255, 0, 0));
@@ -88,15 +90,24 @@ namespace SP2._2
         private (int, int)[] coords = new (int, int)[]
         {
             (130, 40),
-            (220, 110),
+            (40, 110),
+            (70, 215),
             (190, 215),
-            (70, 215), 
-            (40, 110)
+            (220, 110)
         };
 
         public PhilosopherForm()
         {
             InitializeComponent();
+            for (int i = 0; i < 5; i++)
+            {
+                delays[i] = 0;
+            }
+            UpdateDelayLabelTh1();
+            UpdateDelayLabelTh2();
+            UpdateDelayLabelTh3();
+            UpdateDelayLabelTh4();
+            UpdateDelayLabelTh5();
         }
 
         private void buttonStart_Click(object sender, EventArgs e)
@@ -162,6 +173,8 @@ namespace SP2._2
             {
                 thread.Abort();
             }
+            _forks.Clear();
+            _phs.Clear();
             timerUp.Stop();
         }
 
@@ -178,6 +191,61 @@ namespace SP2._2
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) e.Handled = true;
             if (e.KeyChar == '0' && textBoxCntMeals.Text.Length == 0) e.Handled = true;
+        }
+
+        private void trackBarTh1Delay_Scroll(object sender, EventArgs e)
+        {
+            delays[0] = trackBarTh1Delay.Value * 500;
+            UpdateDelayLabelTh1();
+        }
+
+        private void trackBarTh2Delay_Scroll(object sender, EventArgs e)
+        {
+            delays[1] = trackBarTh2Delay.Value * 500;
+            UpdateDelayLabelTh2();
+        }
+
+        private void trackBarTh3Delay_Scroll(object sender, EventArgs e)
+        {
+            delays[2] = trackBarTh3Delay.Value * 500;
+            UpdateDelayLabelTh3();
+        }
+
+        private void trackBarTh4Delay_Scroll(object sender, EventArgs e)
+        {
+            delays[3] = trackBarTh4Delay.Value * 500;
+            UpdateDelayLabelTh4();
+        }
+
+        private void trackBarTh5Delay_Scroll(object sender, EventArgs e)
+        {
+            delays[4] = trackBarTh5Delay.Value * 500;
+            UpdateDelayLabelTh5();
+        }
+
+        private void UpdateDelayLabelTh1()
+        {
+            labelTh1Delay.Text = $"{delays[0]} мс";
+        }
+
+        private void UpdateDelayLabelTh2()
+        {
+            labelTh2Delay.Text = $"{delays[1]} мс";
+        }
+
+        private void UpdateDelayLabelTh3()
+        {
+            labelTh3Delay.Text = $"{delays[2]} мс";
+        }
+
+        private void UpdateDelayLabelTh4()
+        {
+            labelTh4Delay.Text = $"{delays[3]} мс";
+        }
+
+        private void UpdateDelayLabelTh5()
+        {
+            labelTh5Delay.Text = $"{delays[4]} мс";
         }
     }
 }

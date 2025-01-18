@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{87AC6E8D-EA05-4A09-AEAA-E7AC7225B534}|SP2.2.csproj|solutionrelative:philosopherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87AC6E8D-EA05-4A09-AEAA-E7AC7225B534}|SP2.2.csproj|d:\\projects\\sp2.2\\philosopherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{87AC6E8D-EA05-4A09-AEAA-E7AC7225B534}|SP2.2.csproj|D:\\Projects\\SP2.2\\philosopherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{87AC6E8D-EA05-4A09-AEAA-E7AC7225B534}|SP2.2.csproj|solutionrelative:philosopherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "PhilosopherForm.cs",
               "ToolTip": "D:\\Projects\\SP2.2\\PhilosopherForm.cs",
               "RelativeToolTip": "PhilosopherForm.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAcwLYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAALAAAAAAAAAAAAAqwI8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T17:06:42.433Z",
               "EditorCaption": ""
